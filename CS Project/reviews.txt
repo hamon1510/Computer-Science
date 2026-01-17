@@ -1,0 +1,25 @@
+HarryPotter | 5 | The book was detailed and interesting
+HarryPotter | 4 | Magical story with great characters
+HarryPotter | 3 | Fun but a bit repetitive
+HarryPotter | 2 | The book was boring and too long
+HarryPotter | 1 | Poor pacing and uninteresting plot
+Dune | 5 | Deep and well written with amazing world building
+Dune | 4 | Complex but rewarding story
+Dune | 3 | Interesting ideas but slow at times
+Dune | 2 | Hard to follow and confusing
+Dune | 1 | Too slow and difficult to enjoy
+1984 | 5 | Powerful and meaningful message
+1984 | 4 | Thought provoking and well written
+1984 | 3 | Interesting but depressing
+1984 | 2 | Very dark and uncomfortable to read
+1984 | 1 | Too depressing and repetitive
+Foundation | 5 | Classic science fiction with clever ideas
+Foundation | 4 | Intelligent and engaging
+Foundation | 3 | Good concepts but not very exciting
+Foundation | 2 | Lacked character development
+Foundation | 1 | Boring and hard to care about
+HungerGames | 5 | Fast paced and exciting
+HungerGames | 4 | Strong main character and plot
+HungerGames | 3 | Enjoyable but predictable
+HungerGames | 2 | Overhyped and repetitive
+HungerGames | 1 | Weak writing and shallow story
