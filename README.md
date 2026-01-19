@@ -6,24 +6,19 @@
 
 ## Target Assessment Level
 
-Target assessment level of this work is **3**.
+The target assessment level of this work is **3**.
 
 ## Specification
 
 ### What does the program do?
 
-The program analyzes book reviews stored in a text file.
+This program analyses book reviews stored in a separate text file, reviews.txt.
 
 Each review contains a book title, a numerical rating, and a short review text.
 
-The program:
+First, the program reads all reviews from a text file, then asks the user to enter a book title, finds all reivews for that book and finally prints the best review and the worst review.
 
-1. Reads all reviews from a text file
-2. Asks the user to enter a book title
-3. Finds all reviews for that book
-4. Prints the **best review** (highest rating) and the **worst review** (lowest rating)
-
-The program processes text data in a meaningful way but does not attempt to be a real-world application.
+The program processes text data in a meaningful way but isn't useful in the real world.
 
 ### Input
 
@@ -50,7 +45,7 @@ Example:
 HarryPotter | 5 | The book was detailed and interesting
 ```
 
-The program assumes that every line follows this format and that there are no empty lines in the file.
+The program assumes that every line follows this format and it doesn't check for empty lines in the file.
 
 ## Correctness
 
