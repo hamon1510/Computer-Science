@@ -16,7 +16,7 @@ This program analyzes book reviews stored in a separate text file, reviews.txt.
 
 Each review contains a book title, a numerical rating, and a short review text.
 
-First, the program reads all reviews from a text file, then asks the user to enter a book title, finds all reivews for that book and finally prints the best review and the worst review.
+First, the program reads all reviews from a text file, then asks the user to enter a book title, finds all reviews for that book and finally prints the best review and the worst review.
 
 The program processes text data in a meaningful way but isn't useful in the real world.
 
