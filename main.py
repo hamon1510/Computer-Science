@@ -6,7 +6,7 @@ def read_reviews(filename):
         filename (str): path to review file
 
     Returns:
-        list: list of review dictionaries
+        list: list of reviews as a list
     """
     reviews = []
 
@@ -17,12 +17,9 @@ def read_reviews(filename):
             title = parts[0].strip()
             rating = int(parts[1].strip())
             text = parts[2].strip()
-
-            reviews.append({
-                "title": title,
-                "rating": rating,
-                "text": text
-            })
+            
+            # stores the review as a list
+            reviews.append([title, rating, text])
 
     return reviews
 
@@ -41,7 +38,7 @@ def find_book_reviews(reviews, book_title):
     result = []
 
     for review in reviews:
-        if review["title"].lower() == book_title.lower():
+        if review[0].lower() == book_title.lower():
             result.append(review)
 
     return result
@@ -60,20 +57,21 @@ def best_and_worst(reviews):
 
     best_review = reviews[0]
     worst_review = reviews[0]
-
+    
+    # checks whether next review is better or worse rated than the previous
     for review in reviews:
-        if review["rating"] > best_review["rating"]:
+        if review[1] > best_review[1]:
             best_review = review
 
-        if review["rating"] < worst_review["rating"]:
+        if review[1] < worst_review[1]:
             worst_review = review
-
+    
     print("\nBest review:")
-    print(best_review["text"])
+    print(best_review[2])
 
     if best_review != worst_review:
         print("\nWorst review:")
-        print(worst_review["text"])
+        print(worst_review[2])
 
 
 filename = "reviews.txt"
