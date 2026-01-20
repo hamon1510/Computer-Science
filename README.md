@@ -12,7 +12,7 @@ The target assessment level of this work is **3**.
 
 ### What does the program do?
 
-This program analyses book reviews stored in a separate text file, reviews.txt.
+This program analyzes book reviews stored in a separate text file, reviews.txt.
 
 Each review contains a book title, a numerical rating, and a short review text.
 
@@ -23,7 +23,7 @@ The program processes text data in a meaningful way but isn't useful in the real
 ### Input
 
 The program uses a text file containing multiple book reviews and user input for selecting the book title.
-The user inputs the book title using the keyboard.
+The user inputs the book title.
 
 ### Data Format
 
@@ -42,7 +42,7 @@ book_title | rating | review_text
 Example:
 
 ```
-HarryPotter | 5 | The book was detailed and interesting
+Dune | 5 | Deep and well written with amazing world building
 ```
 
 The program assumes that every line follows this format and it doesn't check for empty lines in the file.
@@ -56,20 +56,20 @@ The program assumes that every line follows this format and it doesn't check for
 **User input:**
 
 ```
-Enter book title: HarryPotter
+Enter book title: Dune
 ```
 
 **Output:**
 
 ```
 Best review:
-The book was detailed and interesting
+Deep and well written with amazing world building
 
 Worst review:
-Poor pacing and uninteresting plot
+Too slow and difficult to enjoy
 ```
 
-The program correctly finds all reviews for the selected book, identifies the highest-rated and lowest-rated reviews, and produces the expected output.
+The program should find all reviews for the selected book, identify the highest-rated and lowest-rated reviews, and should produce the expected output.
 
 ## Resource Management
 
