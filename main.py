@@ -3,7 +3,7 @@ def read_reviews(filename):
     Reads reviews from a text file.
 
     Args:
-        filename (str): path to review file
+        filename, as a string: path to review file
 
     Returns:
         list: list of reviews as a list
@@ -13,36 +13,28 @@ def read_reviews(filename):
     with open(filename) as file:
         for line in file:
             parts = line.strip().split("|")
-
             title = parts[0].strip()
             rating = int(parts[1].strip())
             text = parts[2].strip()
-            
-            # stores the review as a list
-            reviews.append([title, rating, text])
-
+            reviews.append([title, rating, text]) # this loop splits the book reviews into separate parts and combines it into a list
     return reviews
-
 
 def find_book_reviews(reviews, book_title):
     """
     Finds all reviews for a given book.
 
     Args:
-        reviews (list): all reviews
-        book_title (str): book to search for
+        reviews, as a list: all reviews
+        book_title, as a string: book to search for
 
     Returns:
         list: reviews for the selected book
     """
     result = []
-
     for review in reviews:
-        if review[0].lower() == book_title.lower():
+        if review[0].lower() == book_title.lower(): # searches index 0, the title of the book in the list
             result.append(review)
-
     return result
-
 
 def best_and_worst(reviews):
     """
@@ -58,7 +50,7 @@ def best_and_worst(reviews):
     best_review = reviews[0]
     worst_review = reviews[0]
     
-    # checks whether next review is better or worse rated than the previous
+    # this loop checks whether next review is better or worse rated than the previous
     for review in reviews:
         if review[1] > best_review[1]:
             best_review = review
@@ -72,7 +64,6 @@ def best_and_worst(reviews):
     if best_review != worst_review:
         print("\nWorst review:")
         print(worst_review[2])
-
 
 filename = "reviews.txt"
 all_reviews = read_reviews(filename)
